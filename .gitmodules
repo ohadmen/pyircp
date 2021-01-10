@@ -1,0 +1,18 @@
+[submodule "pyircp/external/cudex"]
+	path = pyircp/external/cudex
+	url = git@github.com:vladap2013/cudex.git
+[submodule "pyircp/external/pybind11"]
+	path = pyircp/external/pybind11
+	url = https://github.com/pybind/pybind11.git
+[submodule "pyircp/external/eigen"]
+	path = pyircp/external/eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "pyircp/external/octree"]
+	path = pyircp/external/octree
+	url = https://github.com/jbehley/octree
+[submodule "pyircp/external/glog"]
+	path = pyircp/external/glog
+	url = https://github.com/google/glog.git
+[submodule "pyircp/external/googletest"]
+	path = pyircp/external/googletest
+	url = https://github.com/google/googletest.git
