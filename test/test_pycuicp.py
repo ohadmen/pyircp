@@ -1,7 +1,10 @@
 import os
 import unittest
+import time
+
 import pyircp
 import numpy as np
+
 
 
 def read_float_file(path):
@@ -55,9 +58,13 @@ class TestPycuicp(unittest.TestCase):
             0., 0., 0., 1.0
         ])
         expected = expected.reshape((4, 4))
-
+        start = time.time()
         res = icp.run(src, dst, dst_normals, np.eye(3), np.zeros(3))
-
+        end = time.time()
+        print(
+            "#source:{} #dst:{} execution time: {:5.3f}msec".format(np.sum(~np.isnan(src)) // 3,
+                                                               np.sum(~np.isnan(dst)) // 3,
+                                                               (end - start) * 1e3))
         self.assertGreater(res.nInliers, 640 * 480 * 0.5)
         self.assertEqual(res.nInliers, len(res.inliers))
         np.testing.assert_almost_equal(res.rotation, expected[:3, :3], decimal=3)
@@ -66,3 +73,5 @@ class TestPycuicp(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
