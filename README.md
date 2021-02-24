@@ -16,10 +16,26 @@ given source set <img src="https://latex.codecogs.com/gif.latex?p_{src} = \{s_i\
 [ [3](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.116.7292&rep=rep1&type=pdf) ]  Low, Kok-Lim. "Linear least-squares optimization for point-to-plane icp surface registration." Chapel Hill, University of North Carolina 4.10 (2004): 1-3.
 
  
-## Local install
+##install
+
+### prequisites
+* cuda >= 11
+* cuda toolkit https://developer.nvidia.com/cuda-downloads
 ```
-sudo apt-get install libgflags-dev libopencv-dev libboost-all-dev python3.6-dev
+sudo apt install nvidia-driver-XXX
+sudo apt install nvidia-cuda-toolkit
+```
+* cmake >= 3.15
+```
+sudo apt remove --purge cmake
+sudo snap install cmake --classic
+```
+* ```sudo apt-get install libgflags-dev libopencv-dev libboost-all-dev python3.6-dev```
+
+### package
+
+```
 python -m venv venv
 source venv/bin/activate
-python setup.py install
+pip install git+https://github.com/ohadmen/pyircp
 ```
