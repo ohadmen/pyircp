@@ -18,6 +18,7 @@ given source set <img src="https://latex.codecogs.com/gif.latex?p_{src} = \{s_i\
  
 ## Local install
 ```
+sudo apt-get install libgflags-dev libopencv-dev libboost-all-dev python3.6-dev
 python -m venv venv
 source venv/bin/activate
 python setup.py install
