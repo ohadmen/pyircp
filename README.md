@@ -2,7 +2,7 @@
 
 given source set <img src="https://latex.codecogs.com/gif.latex?p_{src}%20=%20\{s_i\}_{i=1}^N,%20s%20\in%20\mathbf{R}^3" /> and destination set with normals <img src="https://latex.codecogs.com/gif.latex?p_{dst}%20=%20\{d_i,n_i\}_{i=1}^N,%20d%20\in%20\mathbf{R}^3,n%20\in%20\mathbf{R}^3" />, find the best transformation <img src="https://latex.codecogs.com/gif.latex?\bold{T}" /> such that:
 
-<img src="https://latex.codecogs.com/gif.latex?\bold{\hat{T}} = \mathop {\arg \min }\limits_\bold{T} \sum \limits_{i=1}^N{\|n_i^T (d_i -  \bold{T}\cdot c_i) \|^2}" />
+<img src="https://latex.codecogs.com/gif.latex?\bold{\hat{T}}%20=%20\mathop%20{\arg%20\min%20}\limits_\bold{T}%20\sum%20\limits_{i=1}^N{\|n_i^T%20(d_i%20-%20%20\bold{T}\cdot%20c_i)%20\|^2}" />
 
 ![pre](res/pre.png)
 ![post](res/post.png)
