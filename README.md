@@ -1,6 +1,6 @@
 # Iterative Random Concensus Projection
 
-given source set <img src="https://latex.codecogs.com/gif.latex?p_{src} = \{s_i\}_{i=1}^N, s \in \mathbf{R}^3" /> and destination set with normals <img src="https://latex.codecogs.com/gif.latex?p_{dst} = \{d_i,n_i\}_{i=1}^N, d \in \mathbf{R}^3,n \in \mathbf{R}^3" />, find the best transformation <img src="https://latex.codecogs.com/gif.latex?\bold{T}" /> such that:
+given source set <img src="https://latex.codecogs.com/gif.latex?p_{src}%20=%20\{s_i\}_{i=1}^N,%20s%20\in%20\mathbf{R}^3" /> and destination set with normals <img src="https://latex.codecogs.com/gif.latex?p_{dst}%20=%20\{d_i,n_i\}_{i=1}^N,%20d%20\in%20\mathbf{R}^3,n%20\in%20\mathbf{R}^3" />, find the best transformation <img src="https://latex.codecogs.com/gif.latex?\bold{T}" /> such that:
 
 <img src="https://latex.codecogs.com/gif.latex?\bold{\hat{T}} = \mathop {\arg \min }\limits_\bold{T} \sum \limits_{i=1}^N{\|n_i^T (d_i -  \bold{T}\cdot c_i) \|^2}" />
 
