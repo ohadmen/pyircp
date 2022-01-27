@@ -4,8 +4,10 @@ given source set <img src="https://latex.codecogs.com/gif.latex?p_{src}%20=%20\{
 
 <img src="https://latex.codecogs.com/gif.latex?\bold{\hat{T}}%20=%20\mathop%20{\arg%20\min%20}\limits_\bold{T}%20\sum%20\limits_{i=1}^N{\|n_i^T%20(d_i%20-%20%20\bold{T}\cdot%20c_i)%20\|^2}" />
 
-![pre](res/pre.png)
-![post](res/post.png)
+
+<img src="res/pre.png" alt="pre" width="400"/>  <img src="res/post.png" alt="post" width="400"/>
+
+
  
 
 ### Refrences
@@ -16,20 +18,21 @@ given source set <img src="https://latex.codecogs.com/gif.latex?p_{src}%20=%20\{
 [ [3](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.116.7292&rep=rep1&type=pdf) ]  Low, Kok-Lim. "Linear least-squares optimization for point-to-plane icp surface registration." Chapel Hill, University of North Carolina 4.10 (2004): 1-3.
 
  
-##install
-
+## install
+* verified on:
+    * ubuntu18.04 | python 3.6 | cuda-11.0
+    * ubuntu20.04 | python 3.8 | cuda-11.5
 ### prequisites
+
 * cuda >= 11
-* cuda toolkit https://developer.nvidia.com/cuda-downloads
-```
-sudo apt install nvidia-driver-XXX
-sudo apt install nvidia-cuda-toolkit
-```
+    * ``` sudo apt install nvidia-driver-XXX```
+	* https://developer.nvidia.com/cuda-downloads
+	* run the installer (ignore warning)
+	* install the toolkit (no need for the drivers)
 * cmake >= 3.15
-```
-sudo apt remove --purge cmake
-sudo snap install cmake --classic
-```
+    * install:
+	* ```sudo apt remove --purge cmake;	sudo snap install cmake --classic```
+
 * ```sudo apt-get install libgflags-dev libopencv-dev libboost-all-dev python3.6-dev```
 
 ### package
@@ -37,5 +40,6 @@ sudo snap install cmake --classic
 ```
 python -m venv venv
 source venv/bin/activate
-pip install git+https://github.com/ohadmen/pyircp
+# pip install git+https://github.com/ohadmen/pyircp 
+python3 setup.py install
 ```

@@ -58,6 +58,7 @@ setup(
     author_email="ohad.men@gmail.com",
     description="Iterative Random Closest Point algorithm",
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url="https://github.com/ohadmen/pyircp",
     packages=find_packages(),
     ext_modules=[CMakeExtension('pyircp', source_dir='./pyircp')],

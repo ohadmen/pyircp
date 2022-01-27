@@ -24,11 +24,7 @@ find_package(OpenCV REQUIRED)
 # apt: libboost-all-dev
 find_package(Boost REQUIRED)
 
-# apt: python3.6-dev
-#find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
-
-# uncomment this if you want to use an exact python version
-find_package(Python3 3.6 EXACT COMPONENTS Interpreter Development REQUIRED)
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
 
 # ----- External libs
 
