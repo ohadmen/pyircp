@@ -1,6 +1,6 @@
 [submodule "pyircp/external/cudex"]
 	path = pyircp/external/cudex
-	url = git@github.com:vladap2013/cudex.git
+	url = https://github.com/ohadmen/cudex.git
 [submodule "pyircp/external/pybind11"]
 	path = pyircp/external/pybind11
 	url = https://github.com/pybind/pybind11.git

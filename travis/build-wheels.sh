@@ -9,21 +9,22 @@ function repair_wheel {
         auditwheel repair "$wheel" --plat "$PLAT" -w /io/wheelhouse/
     fi
 }
-
+echo "1"
 
 # Install a system package required by our library
-yum install -y atlas-devel
-
+apt install -y atlas-devel
+apt install -y cuda-11-0
+echo "2"
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
     "${PYBIN}/pip" wheel /io/ --no-deps -w wheelhouse/
 done
-
-# Bundle external shared libraries into the wheels
+echo "3"
+Bundle external shared libraries into the wheels
 for whl in wheelhouse/*.whl; do
     repair_wheel "$whl"
 done
-
+echo "4"
 # Install packages and test
 for PYBIN in /opt/python/*/bin/; do
     "${PYBIN}/pip" install pyircp --no-index -f /io/wheelhouse

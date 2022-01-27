@@ -24,6 +24,7 @@ given source set <img src="https://latex.codecogs.com/gif.latex?p_{src}%20=%20\{
     * ubuntu20.04 | python 3.8 | cuda-11.5
 ### prequisites
 
+
 * cuda >= 11
     * ``` sudo apt install nvidia-driver-XXX```
 	* https://developer.nvidia.com/cuda-downloads
